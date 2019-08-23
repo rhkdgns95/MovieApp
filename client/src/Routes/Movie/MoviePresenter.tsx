@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "../../typed-components";
+import { Link } from "react-router-dom";
 
 const Container = styled.div`
 `;
@@ -8,7 +9,7 @@ const Movie = styled.div`
     flex-flow: row wrap;
 `;
 
-const Header = styled.a`
+const Header = styled(Link)`
     display: flex;
     background-color: black;
     color: white;
@@ -72,7 +73,7 @@ const MoviePresenter: React.FC<IProps> = ({
         {
             isTrue && (
                 <React.Fragment>
-                    <Header href={"/"}>
+                    <Header to={"/"}>
                     <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"><path d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"/></svg>
                         이전페이지
                     </Header>
