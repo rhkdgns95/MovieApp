@@ -1,0 +1,19 @@
+{
+  "name": "movie",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/rhkdgns95/MovieApp",
+  "license": "MIT",
+  "dependencies": {
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
+    "axios": "^0.19.0",
+    "graphql-yoga": "^1.18.2",
+    "ts-node": "^8.3.0",
+    "typescript": "^3.5.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "dev": "cd src && nodemon -e ts -x ts-node index.ts"
+  }
+}

@@ -1,0 +1,16 @@
+type Query {
+    GetMovies: [Movie!]
+    GetMovie(movieId: Int!): Movie
+}
+
+type Movie {
+    id: Int!
+    title: String!
+    rating: Float
+    year: String
+    genres: [String]
+    summary: String
+    description_intro: String
+    medium_cover_image: String
+    large_cover_image: String
+}
